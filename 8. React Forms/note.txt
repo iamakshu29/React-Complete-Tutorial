@@ -1,0 +1,16 @@
+while we are using form tag for input elements then there is a default behaviour of form tag
+that it refreshes the page as soon as the button is click .. 
+SO to stop the page from refreshing or to prevent this event we call onSubmit() method in form tag 
+and under the function we write event.preventDefault() so that the page do not refresh and reset all the values
+with form tag its normal to use
+
+
+2. 
+While using input tag we can't get the value normally by using input.value 
+we need a function onChange and in this function we have to write event.target.value()
+to get the value..
+
+
+3. 
+When ever we need the value from multiple inputs we must use name attribute in input tag
+which makes it easy to get the value from different and unique names

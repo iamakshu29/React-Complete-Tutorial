@@ -1,0 +1,47 @@
+Main Purpose of react-router-dom is to display multiple components and to 
+make the shifting of one component to another component reload free or without any reload
+
+
+to create routes to display multiple web components we use react-router-dom
+
+ 1. first we install react-router-dom using npm
+ 2. we import BrowserRouter in main file ie index.js file
+ 3. then we import switch and route where we want to write our components
+
+ now react router contains 3 parts that are mentioned in point 2 and 3
+
+
+MOST IMPORTANT
+ in new version of React router dom v6 which is a bit different from v5 so some of the keywords are changes along with some methods
+1. switch is replaced with <Routes></Routes>
+2. component attribute is replaced with element in <Route> tag
+ refer https://reactrouter.com/
+
+
+ 68
+
+Use case 1
+If you use exact and strict together, then the location.pathname will only match exactly as provided in path props.
+
+Example:
+
+<Route exact strict path="/one/" component={About}/>
+Will only match /one/ but not /one and /one/two.
+
+Use case 2
+If you use only strict, then the location.pathname will match which have trailing slash.
+
+Example:
+
+<Route strict path="/one/" component={About}/>
+Will match /one/ and /one/two but not /one.
+
+Use case 3
+If you use only exact, then the location.pathname will match exact location path.
+
+Example:
+
+<Route exact path="/one" component={About}/>
+Will match /one or /one/. The exact props doesn't care for trailing slash. But it will not match /one/two.
+
+

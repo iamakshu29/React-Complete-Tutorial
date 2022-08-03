@@ -1,0 +1,36 @@
+This mini project gives an idea 
+How short a react code can be as compare to HTML 
+
+At first :- we simple make a component then add props to that component for 
+different values as an attribute which we called props in react
+
+For example :-
+<car model = '2012' name = 'audi' />
+
+Second :- we put all the attribute for differnt card and 
+put into an array of object.
+
+data = [
+		{
+		id:1,model:'2021',name='audi'
+		},
+	
+		{
+		id:2,model:'2019',name='ford'
+		},
+	];
+
+	<car model = {data[0].model} name = {data[0].name} />
+	<car model = {data[1].model}  name = {data[1].name} />
+
+Third :- we map all the values using array.map() which make the code more shortes
+{
+	data.map((value)=>{
+		        return(
+				<car key={value.id} model = {value.model}  name = {value.name} />
+		        );
+		})
+}
+
+// while using map function a uniques must be added so that in future we get the card by choosing the uniques key 
+// and it also gives the warning if we don't use a uniques key

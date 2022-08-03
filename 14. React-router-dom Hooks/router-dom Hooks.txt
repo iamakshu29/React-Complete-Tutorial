@@ -1,0 +1,17 @@
+react-router-dom has total of 4 hooks (I was familiar with)
+
+1. useParams
+2. useLocation
+3. useHistory
+4. useRouteMatch
+
+
+useParams :-  it returns an object of key/value pairs of URL parameters.
+
+useLocation :- it return the location object that represents the current URL. It is similar to window.location in brwoser DOM
+		to display the location we use location.pathname
+
+useHistory :- The useHistory hook gives you access to the history instance that you may use to navigate
+
+
+In src file all 3 hooks are explained

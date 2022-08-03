@@ -1,0 +1,8 @@
+here what we do is just get the api fetch and show the data 
+
+after fetch api we need to show it and in react the easiest way to show data is
+to use hooks useEffect and call the api function in useEffect()
+so that as soon as the webapage is render function is called
+
+then take the api data in setState() with the help of useState() hooks
+then use the data to represent value with the help of map function of array

@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&display=swap");
+
+* {
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1{
+  margin-left: 20px;
+}
+
+.facebook {
+  color: #3b5998;
+}
+
+.instagram {
+  color: #c32aa3;
+}
+
+.youtube {
+  color: #ff0000;
+}
+
+ul li {
+  list-style-type: none;
+  text-transform: capitalize;
+}
+
+.main-link ul li,
+.icon-link ul li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.icon-link{
+  margin-right: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+button{
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+
+  nav{
+    flex-direction: column;
+  }
+
+  .main-link,.icon-link{
+    margin-top: 20px;
+  }
+
+.bar{
+  display: none;
+}
+
+.barTwo ul li{
+  display: block;
+}
+
+  button{
+    display: block;
+    float: right;
+    padding: 10px 15px;
+    border-color: blueviolet;
+    background-color: transparent;
+    margin-right: 20px;
+  }
+
+
+}

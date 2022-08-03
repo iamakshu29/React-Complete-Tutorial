@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.heading{
+    color: orange;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 0px 2px 4px #ffe9c5;
+    margin:50px 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.image_div{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    margin: 10px auto;
+}
+
+.netflix{
+    color: lightcoral;
+}
+
+.amazon{
+    color:aqua;
+}
+
+.HBO{
+    color: gray;
+}

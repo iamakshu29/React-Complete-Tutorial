@@ -1,0 +1,10 @@
+just write to commands for permmanently install the material ui modules
+
+1. npm install @material-ui/icons
+2. npm install @material-ui/core
+
+
+then just go to material-ut icons
+select and copy the import code and paste it in your file
+
+to get the add the name of icon as a componenet like <AddIcon />

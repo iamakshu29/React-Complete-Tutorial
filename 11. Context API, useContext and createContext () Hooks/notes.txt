@@ -1,0 +1,33 @@
+React Context API allows you to easily access data at different levels of the component tree,
+without passing prop to every level
+
+ie 
+parent
+  |
+CompA
+  |
+CompB
+  |
+CompC
+
+* what context API do for us is if we have to send the data from parent to CompC 
+directly without any interference of CompA and CompB then we take the help of 
+contextAPI
+
+It is done in three steps :-
+
+1. createContext
+2. provide the value
+3. consuming the value (complex part or lengthy part)
+
+****************************************************************************
+
+Now the context API is become complex at consumer side ie where we display the value
+it becomes like callback hell in ES6 version of JavaScript
+
+To make it easier we use 
+useContext()
+
+instead of using the contextName.consumer and a callback func
+we need to write only const context =  useContext(Contextname)
+and just use that value like we do normally in jsx <h1> my name is {context} </h1>

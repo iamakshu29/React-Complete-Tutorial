@@ -1,0 +1,12 @@
+In this version project is not form with react router dom instead it is form normally
+for example button are used in place of links to show different items in diif category 
+
+and to make the code shorter the set concept is used to get the unique category so that
+the category did not repeat and then use the uniques value to show the buttons
+
+instead of making 4 buttons for 4 category 
+here we use a single button and map the uniques value to make the buttons equal to 
+number of category dynamically
+
+dynamically means we did not need to add the button each time we add a category it always got
+added with the help of array map function

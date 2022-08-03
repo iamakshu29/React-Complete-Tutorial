@@ -1,0 +1,5 @@
+1. for icons we mostly use Material UI icons for react
+and also Material UI comonents like navbar jumbotron and all
+
+
+2. for css framework we use Tailwind css mostly

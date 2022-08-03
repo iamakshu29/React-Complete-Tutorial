@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1{
+  padding: 20px;
+  background-color: hsla(60, 92%, 43%, 0.966);
+  color: white;
+  text-align: center;
+}
+

@@ -1,0 +1,115 @@
+You can use Multiple ReactDOM.render() in a single file but to display all 
+you have to make equal number of div in .html file
+BUT
+if you use the same div having id root to display all the jsx elements then
+the newest ReactDOM.render() override the last ReactDOM.render() and you only
+able to see the content of last one ... not the others above...
+
+
+All component in react Should in PascalCase :- <Heading />  <SeriesData />
+All the props in react should be in camelCase  <button onClick = {} , className = {}, imgSrc = {}, title = {} />
+
+
+REACT HOOKS
+
+1. Introduced in 16.8 version
+
+2. It allows you to use state and other react features withour writing a class.
+hooks are the function which hook into React state and lifecycle features from
+function component
+
+3. It does not work inside class
+
+4. Hooks should always be used at the top level of React functions.
+
+5. Node version 6 or above .   NPM version 5.2 or above
+
+IN REACT WE PREFER TERNARY OPERATOR MORE INSTEAD OF USING if-else CONDITION :- statement ? value1 : value2;
+
+IN REACT WE DONT USE LOOPS INSTEAD OF LOOPS WE USE MAPPING OF ARRAY  => array.map((valueOfArrayElement)=>{<h1>{valueOfArrayElement}</h1>});
+
+IN REACT WE DONT USE array.pop TO DELETE ELEMENTS IN ARRAY INSTEAD OF THIS WE USE array.filter TO FILTER OUT THE NOT COMMON ELEMENT IN PREVIOUS ELEMENTS FROM TOTAL ELEMENTS
+
+IN REACT WE DONT USE CLASSES SO TO CHANGE THE STATE WE USE HOOKE ie const [currState, setState] = initialState;  
+
+IN REACT To match something we use arr.find() function  for example in folder 17 when we need to match the id with the id in array of object we use .find()
+
+
+
+FOR IMAGES :-
+
+1. If you want to get images normally the images folder should in public folder
+2. If you want to import the images the images should be in the same folder where the components are 
+ else if you try to import the images that are in diff folder except src you'll get this error :- 
+Module not found: You attempted to import ../public/images/lucifer.img which falls outside of the project src/ directory.
+Relative imports outside of src/ are not supported. You can either move it inside src/, or add a symlink to it from project's node_modules/.
+
+
+
+what is FILTER  FUNCTION in ARRAY ?
+the filter function filters out the value which does not satisfy the return condition
+as in react we do return id !== index 
+this return statement means filter out the value or display all the values whose id !== index and
+does not show those value which does not satisfy the condition (id === index)
+
+IN to do list we send the same id to remove button and the list ie the id's are both same and others list id are different from that button id 
+it means the return condition id!==index is satisfy for other values except the values which has the button which is clicked at that time because they have same id 
+that's why except that particular value whose adjacent button is pressed all value are shown and
+
+a display of values is shown like the value of which adjacent button is clicked is deleted
+
+
+
+
+IMPORTANT RULE FOR FUNCTION HAVING PARAMETERS :-
+
+when you want to pass a function in event listener like onClick onSubmit onChange which have a paramter then it pass as a callback function not a direct one :-
+
+for example 
+<button  onClick={Add}>Add List</button>      <------ this is the simple example of passing a func without args
+<button onClick={()=>{Delete(id)}}>Delete List</button>      <------ this is the example of passing a func with args as a callback function
+
+
+
+Object Properties we can also called this dynamic properties
+
+we mostly see this while interacting with multiple inputs 
+
+SYNTAX IS :- [name] = value;
+
+this bracket around name does not make it a single element array , it is a syntax for object properties
+in place of [name] the value is shown as a solution.. 
+
+same as it use in multiple inputs if name matches with name attr in input the [name] will take the value present in name attribute dynamically
+IF U DIDN'T UNDERSTAND STILL THEN WATCH THAPA 16HR JAVASCRIPT VIDEOS FROM 11:28:00 
+
+
+// Object Destructuring 
+// when there is an object inside object and we want to do the object Destructuring then there are 2 ways
+
+//1. By Thapa (Simple)
+const{name,value} = event.target;
+
+//2. Written in react docs
+const{target: {name,value}} = event;
+
+// in 1 
+we take event.target as an combined object the Destructured it 
+
+const event.target = {name:"",value:""};
+simply {name,value} = event.target
+
+//but in 2 
+We take event as an object target.name and target.value as different;
+
+let us consider target  as an object first;
+const target  = { name:"", value:""}
+
+Destructuring is {name,value} = target;
+
+when we bring event then name nd value are object values inside another object
+then we do this 
+const event = {target : {name : "",value:""}};
+
+Destructuring the event object
+const {target:{name,value}} = event;
