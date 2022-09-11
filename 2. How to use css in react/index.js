@@ -61,8 +61,8 @@ import './index.css';
 //     margin: '0 20px'
 // }
 
-// as we know to use JS in JSX, we need pair of curly brackets {} around the expression
-// we use the same here to include the object, which contain the css properties...
+//* as we know to use JS in JSX, we need pair of curly brackets {} around the expression
+//* we use the same here to include the object, which contain the css properties...
 
 // ReactDOM.render(
 //     <>
@@ -95,7 +95,7 @@ import './index.css';
 //             fontFamily: '"Courier New", Courier, monospace',
 //             textTransform: 'upperCase'
 //         }}>
-//         Above ReactDOM.render() files are not rendering to render them comment this one.. </h1>
+//         Above ReactDOM.render() files are not rendering, to render them comment this one.. </h1>
 //     </>,
 //     document.getElementById('root')
 // );

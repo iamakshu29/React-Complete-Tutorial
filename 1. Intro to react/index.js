@@ -53,8 +53,8 @@ ReactDOM.render(<h1> hello world!! </h1>, document.getElementById('root'));
 
 //*                       How to render Multiple elements in React...
 
-// Render method takes one single JSX element, and to write multiple JSX elemtent, we need to wrap the elements to one
-// that's why we wrap both multiple elements to a div,  now we can write any number of elements inside div
+// Render method takes one single JSX element, and to write multiple JSX elements, we need to wrap the elements inside a single tag
+// that's why we wrap multiple elements to a div tag, now we can write any number of elements inside div
 
 //* 1. Older version syntax
 // ReactDOM.render(
@@ -78,11 +78,11 @@ ReactDOM.render(<h1> hello world!! </h1>, document.getElementById('root'));
 
 //TODO **********************************************************************  video 9    *********************************************************************************
 
-//* But there is another fast version to write multiple elements which is known as React.Fragement
+//* But there is another fast version to write multiple elements which is known as React.Fragment
 // if we use div as a wrapping element then that extra div is shown in DOM which may create problem 
 // while using grid or flex and it is also time consuming.
 
-//  That's we we use <react.fragment> as it consumes less memory, faster amd time efficient 
+//  That's we we use <React.Fragment> as it consumes less memory, faster amd time efficient 
 // <React.Fragment>...</React.Fragment> is best method.
 
 //* 3. Newer and Better version syntax part 1
@@ -116,9 +116,9 @@ ReactDOM.render(<h1> hello world!! </h1>, document.getElementById('root'));
 
 // AND
 
-//* How to use TEMPLATE LITERALS ie ` ` backticks
+//* How to use TEMPLATE LITERALS ie ` ${} ` backticks
 
-
+//* combining both we get { `${}` }  <-- outer { } for using js in jsx and inner issyntax for using template literals...
 
 // const fname = "Akshat";
 // const lname = "Verma";
@@ -162,7 +162,7 @@ ReactDOM.render(<h1> hello world!! </h1>, document.getElementById('root'));
 
 //* Properties of JSX element is called JSX attribute like in anchor tag href and target are JSX attributes 
 //? for example : <a href = "", target = "" /> 
-// we cant define them as html attribute bcoz they look like html but in real they are JSX elements
+// we cant define them as html attribute bcoz they look like html but in react POV they are JSX elements
 
 
 // const img = 'dummy-imaage-2.png';

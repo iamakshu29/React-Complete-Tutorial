@@ -26,4 +26,4 @@ export default App;
 
 // to return the multiple componenets we use react.fragments ie <> </>
 
-// we can also make component as a functional Component on same page
+// we can also make component as a functional Component on same page like Time
